@@ -1,0 +1,7 @@
+1. How to play youtube videos in HTML?
+<iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+2. Implement the following using canvas tag in HTML5, vertical graph(similar to horizontal graph).
+
+
