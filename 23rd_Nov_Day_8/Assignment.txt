@@ -1,0 +1,29 @@
+1. Find out the details about List attribute in html5 forms. How to use datalist tag? Prepare an example for list attribute and datalist tag?
+The <datalist> tag specifies a list of pre-defined options for an <input> element.
+The <datalist> tag is used to provide an "autocomplete" feature for <input> elements. Users will see a drop-down list of pre-defined options as they input data.
+
+2. What are  Web Crawlers in SEO? 
+ Web crawlers crawl the Internet to index pages for search engines.
+ Search engines do not automatically know which websites are out on the Internet. They need to have programs to crawl and index sites before delivering the correct pages for phrases and keywords or the words that people use to find a helpful page.
+ Similarly, web crawler programs are used by search engines to scour the Internet looking for pages before the page data is stored to be used in future searches. 
+ Search engine crawlers need to have a starting place – a link  – before seeing the following link and the subsequent pages. 
+
+3. Why do you use backlinks in SEO?
+Backlinks are sometimes referred to as inbound links, incoming links, or one-way links. These links are clickable and allow you to jump from one website to another's page.
+Backlinks are sometimes referred to as inbound links, incoming links, or one-way links. These links are clickable and allow you to jump from one website to another's page. Google and other big search engines think backlinks heavily influence the quality and quantity of your website. The pages with backlinks are more likely to get good organic search engine rankings as they are packed with more information that provides their web pages and websites with good traffic.
+
+Backlinks are considered votes for your website compared to other websites. Many votes tell search engines that this piece of content is worth reading, credible, and useful.
+As a result, the more votes you have, the higher your site will rank in Google, Bing, Yahoo, and other search engines.
+
+
+4. Create a web page to apply microdata for the following item:
+
+		a.  Logo
+		b.  Url
+		c.  Person
+		d.  Place
+		e.  Movie
+		f.  Recipe
+		g.  Restaurant
+		
+5.   Create a web page to for movie reviews page. Provide required metadata using Meta tags.   

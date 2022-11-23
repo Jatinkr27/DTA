@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Data List</title>
+        <style>
+            fieldset{
+                width: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Example of list attribute in form</h1>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Impact Day Event</legend>
+                <label>Name</label>
+                <input type="text" name="t1" placeholder="Full Name" required autofocus><br><br>
+                <label>Choose your interest</label>
+                <input list="interests" name="t2" required>
+                <datalist id="interests">
+                  <option value="Art">Art</option>
+                  <option value="Craft">Craft</option>
+                  <option value="Games">Games</option>
+                  <option value="Quiz">Quiz</option>
+                  <option value="Photography">Photography</option>
+                </datalist><br>
+                    <input type="submit" style="float:right;">
+            </fieldset>
+        </form>
+    </body>
+</html>
