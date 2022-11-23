@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Animation</title>
+        <style>
+            	
+            @keyframes   Animation1
+            {
+                    from {left:0px;}
+                    to {left:700px; }
+            }
+
+            body{
+                background-color: skyblue;
+            }
+            #car{
+                position: absolute;
+                width: 550px;
+                height: 300px;
+                animation-name  :  Animation1;
+                animation-duration  :7s;
+                animation-delay  :2s;
+                animation-iteration-count :infinite;
+                animation-direction  :  alternate;
+                top: 100px;;
+            }
+            #road{
+                position: relative;
+                background-color:grey;
+                height: 400px; 
+                width:100%;         
+            }
+        </style>
+    </head>
+    <body>
+        <img id="road" src="Road.png" alt="road">
+        <img id="car" src="https://freepngimg.com/thumb/car/2-2-car-transparent.png" alt="car">
+    </body>
+</html>
