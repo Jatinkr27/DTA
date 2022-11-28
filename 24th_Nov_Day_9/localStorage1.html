@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+	<h3>localStorage</h3>
+	<hr/>	
+	
+	<fieldset>
+		<legend>Customer Data</legend>
+			
+		Customer Name : <input type="text"  value=""  id="cname"  name="cname"  />
+		<br/><br/>
+		
+		Joined Date :<input type="Date" value=""  id="jdate"  name="jdate"  />
+		<br/><br/>
+		
+		Favourite Color : <input type="color" value=""  id="fcolor"  name="fcolor"  />
+		<br/><br/>
+		
+		<input type="button"  value="Save User Data"   onclick="fn_saveData()" />
+		<input type="button"  value="Delete User Data"  onclick="fn_deleteData()" />
+			
+	</fieldset>
+		
+	<br/><br/>
+		
+	<fieldset style="display:none;">
+		<input type="button"  value="Get User Data"   onclick="fn_getData()" />
+		<p  id="p1"></p>
+	</fieldset>
+		
+	<a href="localStorage2.html">Next page ></a>	
+		
+    <script>
+            
+        function  fn_saveData()
+        {
+            // 1.  Get data from input fields
+            var  vcname  =  document.getElementById("cname");
+            var  vjdate  =  document.getElementById("jdate");
+            var  vfcolor =  document.getElementById("fcolor");
+            
+            // 2.  Create object with input fields values
+            var  dataObj = {};
+            dataObj.cname =  vcname.value;
+            dataObj.jdate =  vjdate.value;
+            dataObj.fcolor =  vfcolor.value;
+            
+            // alert(dataObj );
+            
+            // 3. Convert the object into JSON string
+            var  resultStr  =  JSON.stringify(  dataObj );
+                                    
+            // 4.  Store the string in localStorage		
+            localStorage.setItem("userData", resultStr);
+            
+            alert("User Data stored in localStorage");
+        }
+            
+        
+        function   fn_deleteData()
+        {
+            localStorage.removeItem("userData");						
+            alert("User Data removed from  localStorage");
+        }
+            
+    
+        function fn_getData()
+        {
+            // 1.  Reading data from localStorage				
+            var  dataStr  =  localStorage.getItem("userData");		 
+            
+            if(dataStr == null)
+            {
+                var  paraObj  =  document.getElementById("p1");
+                paraObj.innerHTML = "";
+                
+                alert("There is no user data in localStorage");
+                return;	// exit from the function 
+            }
+            // alert(dataStr);
+            // 2.  Convert JSON string into object	
+            var dataObj =  JSON.parse( dataStr);
+            //	alert(dataObj.token);
+            // alert(dataObj.uid);
+            // 3.  Access html elements to display user data
+            var  paraObj  =  document.getElementById("p1");                  
+            // 4.  Show user details
+            paraObj.innerHTML =  dataObj.cname + " , " + dataObj.jdate +  " , "  + dataObj.fcolor;
+        }				
+    
+    </script>
+</body>
+</html>
