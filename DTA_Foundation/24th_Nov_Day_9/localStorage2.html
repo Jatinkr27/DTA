@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Detail</title>
+</head>
+
+<body id="main">
+    <h1 id="head"></h1>
+    <p id="p1"></p>  
+
+    <script>	 	
+		// 1.  Reading data from localStorage				
+		var  dataStr  =  localStorage.getItem("userData");		 
+        			
+		if(dataStr == null)
+			{
+                var  mainObj  =  document.getElementById("main");
+				mainObj.style.backgroundColor="white";
+                var  headObj  =  document.getElementById("head");
+				headObj.innerHTML = "Welcome to Guest user";
+				var  paraObj  =  document.getElementById("p1");
+				paraObj.innerHTML = "Data is empty";	
+			}
+            else
+            {
+
+                // alert(dataStr);
+				// 2.  Convert JSON string into object	
+				var dataObj =  JSON.parse(dataStr);
+					
+				// alert(dataObj.cname);
+				// alert(dataObj.fcolor);
+				// function darkOrLight(hexcolor)
+				// {
+				// 	// alert("hex"+hexcolor);
+				// 	var r = parseInt(hexcolor.substr(1,2),16);
+				// 	// alert("red"+r);
+				// 	var b = parseInt(hexcolor.substr(3,2),16);
+				// 	// alert("blue"+b);
+				// 	var g = parseInt(hexcolor.substr(5,2),16);
+				// 	// alert("green"+g);
+				// 	var yiq = (((r*299)+(g*587)+(b*114))/1000);
+				// 	alert("sum"+yiq)
+				// 	// alert("color"+dOrL);
+				// 	return yiq >=128;
+				// }
+
+				// var dOrL = darkOrLight(dataObj.fcolor);
+				// alert("color"+dOrL);
+
+				// if(darkOrLight(dataObj.fcolor))
+				// {
+				// 	var a =document.getElementById("main");
+				// 	a.style.color="white";
+				// }
+					
+				// 3.  Access html elements to display user data
+				var  mainObj  =  document.getElementById("main");
+				mainObj.style.backgroundColor=dataObj.fcolor;
+                var  headObj  =  document.getElementById("head");
+		    	headObj.innerHTML ="Welcome "+dataObj.cname;
+	    		var  paraObj  =  document.getElementById("p1");
+		    	paraObj.innerHTML = "Your Joining Date : "+ dataObj.jdate;			
+				// 4.  Show user details
+				// paraObj.innerHTML =  dataObj.cname + " , " + dataObj.jdate +  " , "  + dataObj.fcolor;
+            }		
+    </script>
+</body>
+</html>

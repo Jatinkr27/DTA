@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Image Menu</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1 class="text-bg-success display-2 p-2 container">Images style in Bootstrap</h1>
+        <div class="container p-2 text-bg-secondary">
+            <label>Choose image style : </label>
+            <select id="s1" onchange="mainFunction()">
+                <option value="no">Select Style</option>
+                <option value="o1">Rounded</option>
+                <option value="o2">Circle</option>
+                <option value="o3">Thumbnail</option>
+            </select><br/><br/>
+            <!-- <button onclick="myFunction1()">rounded</button>
+            <button onclick="myFunction2()">circle</button>
+            <button onclick="myFunction3()">thumbnail</button> -->
+            <img src="demo1.jpg" alt="Winter" class="w-25" id="image">
+            <script>
+                function mainFunction()
+                {
+                    var Img =document.getElementById("s1").value;
+                    // alert(Img);
+                    if(Img=="o1")
+                    myFunction1();
+                    else if(Img=="o2")
+                    myFunction2();
+                    else if(Img=="o3")
+                    myFunction3();
+                    else{
+                        var objImg =document.getElementById("image");
+                        objImg.classList.remove("rounded-circle","img-thumbnail","rounded");
+                    }
+                    
+                }
+                function myFunction1()
+                {
+                    var objImg =document.getElementById("image");
+                    // alert("Rounded");
+                    objImg.classList.remove("rounded-circle","img-thumbnail");
+                    objImg.classList.add("rounded");
+                }
+                function myFunction2()
+                {
+                    var objImg =document.getElementById("image");
+                    // alert("Rounded-cicle");
+                    objImg.classList.remove("rounded","img-thumbnail");
+                    objImg.classList.add("rounded-circle");
+                }
+                function myFunction3()
+                {
+                    var objImg =document.getElementById("image");
+                    // alert("Thumbnail");
+                    objImg.classList.remove("rounded-circle","rounded");
+                    objImg.classList.add("img-thumbnail");
+                }
+            </script>
+        </div>
+
+    </body>
+</html>

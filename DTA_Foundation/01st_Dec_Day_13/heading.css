@@ -1,0 +1,7 @@
+.heading {
+  font-size: 50px;
+  font-weight: bolder;
+  color: green;
+  box-shadow: 5px 5px  red, 10px 10px  black;
+  border: 2px solid green;
+}

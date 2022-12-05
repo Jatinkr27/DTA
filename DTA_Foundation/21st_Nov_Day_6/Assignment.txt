@@ -1,0 +1,45 @@
+1. Why do you use position property in CSS?
+The position property specifies the type of positioning method used for an element.
+There are five different position values:
+static
+relative
+fixed
+absolute
+sticky
+Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.
+
+2. What is the difference between position property values :  absolute / relative;
+   position: absolute;
+   position : relative;
+
+An element with position: relative; is positioned relative to its normal position.
+Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+How to rotate object in css?
+
+transform: rotate(angle);
+
+3. How to implement following requirements in CSS3 (As per the image):
+		a. Apply space between words
+		b. Apply space between letters
+		c. Apply shadow for each character in the text
+		d. Other requirements as per the image
+		
+4.  Create  a web page to prepare image gallery. Apply required CSS styles.
+
+5.  How to hide an element uisng CSS?
+display:none it doesn't take up he space if its none.
+visibility:hidden it take up the space even if it is hidden.
+
+6.  Create web page to apply animation based on the position. Object should move from left to right.
+
+7.  Create a image gallery using flexbox for the below requirements:
+		
+			a. Each card should contain :  image and description
+			b. Cards should be arranged centred.
+			c.  Update the margins and width for mobile device using media queries. 
+

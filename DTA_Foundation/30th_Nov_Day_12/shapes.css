@@ -1,0 +1,27 @@
+.rectangle {
+  color: Blue;
+  box-shadow: 2px 2px 5px Blue;
+  border: 2px solid Blue;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+.square {
+  color: Green;
+  box-shadow: 2px 2px 5px Green;
+  border: 2px solid Green;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.circle {
+  color: yellow;
+  box-shadow: 2px 2px 5px yellow;
+  border: 2px solid yellow;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}/*# sourceMappingURL=shapes.css.map */

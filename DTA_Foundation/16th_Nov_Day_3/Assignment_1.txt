@@ -1,0 +1,27 @@
+1. what is validation in client side programming?
+   It is like a pre check of the data provided by the user for format, data type, size, file type etc..
+
+2. what are the advantages of performing validation?
+ o It help in increasing accuracy.
+ o It reduces the burden of validating at server side.
+ o It increases the success rate.
+
+3. What is querystring in a webpage?
+   A query string is a part of a uniform resource locator (URL) that assigns values to specified parameters.
+   example:
+   http://internet.org/process-homepage?number1=23&number2=12
+   So in the above URL, the query string is whatever follows the question mark sign (“?”) i.e (“number1=23&number2=12”) this part. And “number1=23”,          “number2=12” are Query Parameters which are joined by a connector “&”. 
+
+4. What is <input type="hidden"  />  ? Why do we use?
+   It a hidden field.A hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted.
+
+5. Diff. between  <input type="submit"  />   and <button></button> ?
+   <input type="submit"  /> is used to submit the input content to the specified url. Its function is predefined. It is empty tag.
+   <button>...</button> is use to give a specific function to the button. Its function is defined by developer. It is a conatiner tag. Inside a <button>        element you can put text and tags like <i>, <b>, <strong> etc..Always specify the type attribute for a <button> element, to tell browsers what type of       button it is.
+
+8.  Create Web page to provide navigations to UI Frameworks using ImageMap concept?   (Refer the image for details)
+	a.  https://jquery.com/
+	b. https://angular.io/
+	c.  https://getbootstrap.com/
+
+
