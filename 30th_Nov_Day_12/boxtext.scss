@@ -1,0 +1,29 @@
+$boxHeight: 15px;
+$textSize:  8px;
+
+.bt
+{
+    border: 1px solid darkgray;
+    padding : 10px;
+    margin : 5px; 
+    text-align: center;
+}
+
+@for $i from 1 to 7
+{
+    .bt#{$i}
+    {
+        height :  $boxHeight + ($i * 10);
+        font-size: $textSize + ($i * 10);
+
+        @if( $i >3)
+        {
+            background-color: lime;
+        }
+        @else
+        {
+            background-color: aqua;
+        }
+        
+    }
+}

@@ -1,0 +1,38 @@
+1. How to add or remove css classes to html elemnts using js? with examples.
+Add Class
+
+var el = document.getElementById("div1");
+// Adding Single class
+el.classList.add("my-class");
+// Adding Multiple calsses
+el.classList.add("my-class", "my-another-class");
+
+Remove Class
+
+var el = document.getElementById("divID");
+// Removing class
+el.classList.remove("my-class");
+
+2. What is CDN? What are the advantages of using CDN URL?
+It stands for Content delivery network,A content delivery network (CDN) is a group of servers spread out over a region or around the world that work together to speed up content delivery on the web. The servers in a CDN temporarily store (or cache) webpage content like images, HTML, JavaScript, and video. They send the cached content to users who load the webpage. Today, almost all websites and applications rely on a CDN to help serve content to their users.
+ 
+Advantages:
+
+Performance
+Faster performance is the benefit most people think of when considering CDNs, and for good reason. Websites that start using a CDN have seen 50% reductions in load times, or even more in some cases.
+
+Reliability
+Sometimes, things go wrong on the Internet. Servers go down, networks become congested, and connections get interrupted. A CDN enables web applications to provide uninterrupted service to users even in the face of these problems.
+
+Cost savings
+The main way that CDNs cut down on expenditure for website operators is by reducing trips to and from the origin server. Because CDNs cache much of the content on a website and serve that content from the cache, the origin server does not have to deliver the same content over and over. Instead, the CDN does this on the origin server's behalf.
+
+Resilience against attack
+CDNs are especially well-suited to defending websites from denial-of-service (DoS) and distributed denial-of-service (DDoS) attacks. In these attacks, an attacker directs vast quantities of junk network traffic at a website to try to overwhelm and crash the website. With their many servers, CDNs are better able to absorb large amounts of traffic, even unnatural traffic spikes from a DDoS attack, than a single origin server. 
+
+3. How to align justify using Bootstrap 5?
+It don’t provide utility classes for justified text. While, aesthetically, justified text might look more appealing, it does make word-spacing more random and therefore harder to read.
+
+4. [Practical Assignment]
+Create a web page to change the border style based on the selected option in drop-down. Use Image classes of Bootstrap to implement this (Refer the Image)
+

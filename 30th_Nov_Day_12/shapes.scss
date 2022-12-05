@@ -1,0 +1,37 @@
+@mixin shapes($shadowColor: Blue,  $imageShape: "Rectangle" ) 
+{
+    color: $shadowColor;
+    box-shadow: 2px 2px 5px  $shadowColor;
+    border: 2px solid  $shadowColor ;  
+    margin:10px; 
+
+    @if $imageShape == "square" {
+        width: 200px;
+        height: 200px;
+    }	
+    @if $imageShape == "circle" {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+    }
+    @if $imageShape == "rectangle" {
+        width: 300px;
+        height: 200px;
+    }
+        
+}
+
+.rectangle
+{
+    @include shapes($shadowColor: Blue,  $imageShape: "rectangle" );
+}
+
+.square
+{
+    @include shapes($shadowColor: Green,  $imageShape: "square" );
+}
+
+.circle
+{
+    @include shapes($shadowColor: yellow,  $imageShape: "circle" );
+}
