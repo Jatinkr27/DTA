@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Total</title>
+</head>
+<body>
+    <h2>Product Total</h2>
+    <hr/>
+    Product : <input type="text" name="t1" id="t1"><br><br> 
+    Unit Price : <input type="text" name="t2" id="t2"><br><br>
+    Quantity : <input type="text" name="t3" id="t3"><br><br>
+    <input type="button" value="Get Total" id="btn1">
+    <hr>
+    <p></p>
+    <hr>
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            
+            $("#btn1").click(function(){
+                $("p").html("");
+                let uPrice = $("#t2").val();
+                let qty = $("#t3").val();
+                let total = uPrice*qty;
+                if(qty>10)
+                {
+                    $("p").html(`
+                    Discount 10% <br>
+                    Quantity Purchased = ${qty}<br>
+                    Unit price is ${uPrice}<br><br>
+                    Total = ${total-(total/10)}<br>`); 
+                }
+                else
+                {
+                    $("p").html(`
+                    Quantity Purchased = ${qty}<br>
+                    Unit price is ${uPrice}<br><br>
+                    Total = ${total}<br>`);
+                }
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

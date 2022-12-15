@@ -1,0 +1,24 @@
+1. What is setInterval()  and setTimeout() methods in JavaScript?
+
+The setTimeout() method executes a function, after waiting a specified number of milliseconds. 
+Syntax:
+window.setTimeout(function, milliseconds);
+
+The setInterval() method repeats a given function at every given time interval. 
+Syntax:
+window.setInterval(function, milliseconds);
+
+2. What is Asynchronous?
+it means allowing the function to be executed immediately, there is no need to wait for the current execution completion, it will be for further execution.
+
+3.  Create a web page to display customers data in table format.  Use fetch() to communicate with server 
+
+	url :  https://www.w3schools.com/angular/customers.php
+
+	Hint :  Update the previous  example with table tags. 
+
+4.  Create a web  page  to implement the following requirement:
+		a.  Add a button to Show data. 
+		b.  Write the code to get the data from the following url using fetch() 
+					https://reqres.in/api/users
+		c.  Display the data in tabel format

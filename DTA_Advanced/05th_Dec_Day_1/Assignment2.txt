@@ -1,0 +1,40 @@
+1. Is it possible to disable JavaScript in browser?  If yes, How to disable javascript in browser?
+   Yes, To enable or disable JavaScript in Edge, follow these steps.
+
+   a. Open Microsoft Edge.
+   b. the upper-right corner of the screen, click the Edge more icon.
+   c. At the bottom of the Settings and more menu, select Settings.
+   d. On the left side of the screen, select Cookies and site permissions.
+   e. Under the Site permissions section, click the box labeled JavaScript.
+   f. On the Site permissions / JavaScript screen, use the toggle switch to enable and disable JavaScript.
+
+2. What is the difference between undefined and not defined in JavaScript?
+   "not defined" is usually caused by a typo, or by trying to access a variable that is out of scope or not defined. "undefined" is usually     caused by forgetting to assign a value to a variable.
+
+3. Difference between ==  and ===?
+   Double equals named as Equality Operator. Triple equals named as Identity / Strict equality Operator.	
+   Double equals first convert the operands into the same type and then compare i.e comparison would perform once both the operands are of     the same type. This is also known as type coercion comparison. On the other hand, triple equals do not perform any type of conversion       before comparison and return true only if type and value of both operands are exactly the same.
+
+   Eg.
+   var a = true;
+   var b = 1;
+   var c = true;
+   console.log (a == b); // first convert 1 into boolean true then compare
+   console.log (a === c); // both are of same type no conversion required simple compare.
+   console.log (a === b); // no conversion performed and type of both operands are not of same type so expected result is false.
+
+4. What does the isNaN() function?
+   isNaN() method returns true if a value is Not-a-Number.
+
+5. Difference between Client side JavaScript and Server side JavaScript?
+   Client-side scripting                            	
+   Runs on the user's computer, i .e. browser interprets the script
+   Source code is visible to the user.	
+   Used for validations and functionality for the user events
+   Depends on the browser and version.
+	
+   Server-side scripting
+   Runs on the web server
+   Source code is not visible to the user because the output of a server-side program is an HTML page.
+   Used for business logic and data access from the database. The pages are created dynamically.
+   Doesn't depend on the client. Any server-side technology can be used.

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class And Object</title>
+</head>
+<body>
+    <h2>Class And Object</h2>
+    <hr/>
+
+    <script>
+        class Employee
+        {
+            constructor(empno, ename, job)
+            {
+                this.empno=empno;
+                this.ename=ename;
+                this.job=job;
+            }
+
+            showDetails()
+            {
+                let str=`Emp No : ${this.empno}
+Emp Name : ${this.ename}
+Job : ${this.job}`;
+                console.log(str);
+            }
+
+        }
+
+        var obj1= new Employee(123,"Scott","CA");
+        var obj2 = new Employee(234,"Claire","Analyst");
+        obj1.showDetails();
+        obj2.showDetails();
+    </script>
+</body>
+</html>

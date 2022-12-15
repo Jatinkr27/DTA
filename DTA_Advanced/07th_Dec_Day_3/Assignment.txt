@@ -1,0 +1,45 @@
+1. What is BOM? Differnce between DOM and BOM?
+The Browser Object Model (BOM) is used to interact with the browser.
+The default object of browser is window means you can call all the functions of window by specifying window or directly. For example: window.alert("hello javatpoint");  
+
+Browsers feature a Browser Object Model that allows access and manipulation of the browser window. Using the BOM, developers can move the window, change text in the status bar, and perform other actions that do not directly relate to the page content.
+
+The Document Object Model is an application programming interface (API) for HTML as well as XML.
+
+The DOM maps out an entire page as a document composed of a hierarchy of nodes like a tree structure and using the DOMAPING nodes can be removed, added, and replaced.
+
+2. What is event target property in javascript?
+The target event property returns the element object that triggered the event.
+
+3. Update the previous example (WebPage5_Arrays_Dynamic.html)  to implement the following requirements:
+
+	a. It does not allow to add duplicates. If you try to add it should show message. 
+	b. If the given item is not exists, you need to show the message while removing the item. 
+	
+4.  Update the yesterday example (	all math operations -- assignment4) using single function for all operations.  Use target property to implement this. 	
+
+5.  Create a web page to display products based on the selected category.
+
+		a. Drop-down should show list of categories :   Laptops, Mobile Phones, Sound Systems etc...
+		b. Take 3 spearate arrays to store the products
+		c.  Based on the selected category you have to get items from the corresponding array and   load the items in list format.
+
+6.  Create a web page to perform validations using javascript forms.
+
+		a.   Customer Name :    Required
+		b.   Source Station   
+		c.   Destination Station  :  Source station & destination should not be same
+		d.   Contact Number  :  Required,  should have 10 digits
+		e.    E-mail   :  Required
+		
+		(Hint :  Do not use HTML5 attributes )
+		
+		
+7.   What is difference between  indexOf()  and findIndex()
+The indexOf() method returns the position of the first occurrence of a value in a string.
+The indexOf() method is case sensitive.
+
+The findIndex() method executes a function for each array element.
+The findIndex() method returns the index (position) of the first element that passes a test.
+The findIndex() method does not execute the function for empty array elements.
+The findIndex() method does not change the original array.

@@ -1,0 +1,17 @@
+1. How to add / remove events dynamically without using event attributes (eg:  onclick, ...)
+element.addEventListener(event, function, useCapture);
+element.removeEventListener("mousemove", myFunction);
+ 	
+2. Create a web page to implement the following requirements:
+		
+		a. Add two buttons  :  Find By Empno    Find By Job
+		b. Create an array to hold some employees data  (Employee objects)
+		c.  "Find By Empno" --- click 
+					---  Search based on the empno and display that details in table format
+					---  By default table should have only header row 
+		d.  "Find By Job" --- click 
+					---  Search based on the job and display that details in table format
+					---  By default table should have only header row 
+		e.  You can add textbox to read data from user.
+		
+	
