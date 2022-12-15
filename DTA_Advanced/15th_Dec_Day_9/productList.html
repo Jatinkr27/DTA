@@ -1,0 +1,57 @@
+<html>
+ <head> 
+ </head>
+ <body>
+	<h3> jQuery Programming  - DOM Traversing</h3>
+	<hr />
+		
+	<input id="t1" placeholder="product name" />
+	<input id="t2" placeholder="unit price " />
+	<input id="t3" placeholder="quantity" />
+    <input type="button" value="Add item" id="btn1">
+	<br></br> 
+
+ <table id="table1" border="2" width="400px">
+	<tr>
+		<th>Product Name</th>
+		<th>Unit Price</th>
+		<th>Units In Stock</th>
+	</tr>
+	</table>  
+		 
+	<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+	<script>
+	
+		$(document).ready(function()
+		{
+				
+			 $("#btn1").click(function()
+			 {
+				let pName  =   $("#t1").val();
+                let uPrice  =   $("#t2").val();
+                let qty  =   $("#t3").val();
+
+				if(pName=="" || uPrice=="" || qty=="" )
+				{
+					alert("Enter Values");
+					return;
+				}
+				// $("#table1 tr").each(function(){
+				// 	var value = $(this).children().eq(0).text();
+				// 	var valueText=$("#t1").val();
+				// });
+                let  str  = "<tr><td>"+pName+"</td><td>"+uPrice+"</td><td>"+qty+"</td></tr>";
+				$("#table1").append(str);
+				$("#t1").val("");
+				$("#t2").val("");
+				$("#t3").val("");
+			 });
+		 
+		});
+				
+	</script>
+	
+ </body>
+</html>
+

@@ -1,0 +1,41 @@
+1. Find the answers for the following questions: 
+	a. What is the eval() method?
+	The eval() method evaluates or executes an argument.
+
+	If the argument is an expression, eval() evaluates the expression. If the argument is one or more JavaScript statements, eval() executes the statements.
+
+	let text = "10 * 200";
+	let result = eval(text);
+	output:
+	2000
+
+	b. What is the purpose of  prev() and next()  methods in jQuery?  
+	The prev() method returns the previous sibling element of the selected element.
+	Sibling elements are elements that share the same parent.
+	The DOM tree: This method traverse backwards along the previous sibling of DOM elements.
+	$(selector).prev(filter)
+
+	The next() method returns the next sibling element of the selected element.
+	Sibling elements are elements that share the same parent.
+	The DOM tree: This method traverse forward along the next sibling of DOM elements.
+	$(selector).next(filter)
+
+	c. How to delete all rows in a table except first row?
+	$("table tr").slice(1).remove();
+
+2.   Update my example (WebPage3_DOM_Traversing.html) for the following requirement:
+
+	a.  Add "Remove"  hyperlink in the first column for each row
+	b.  Write the code to delete the selected row when the user click "Remove" link.
+
+3. Create a web page to implement the following requirement:
+		a.  Read product details from user
+		b. Add a new row to table with the product details 
+		
+4. Create a web page to implement the following requirement:
+		a.  Apply background color - pink to rows whose qty is zero
+		b.  Apply background color - lightgreen to rows whose qty is not zero
+		c.  Apply different background colors to First and Last Row 
+
+
+
