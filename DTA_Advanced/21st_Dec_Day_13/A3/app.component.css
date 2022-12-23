@@ -1,0 +1,46 @@
+a
+{
+   color: rgb(84, 204, 237); 
+}
+
+.shead
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.scontent
+{
+    font-size: 14px;
+    color: darkgray;
+}
+main
+{
+    padding:15px;
+    background-color:lightcyan;
+}
+header
+{
+    font-weight: bold;
+}
+footer
+{
+    background-color: rgba(0, 60, 255, 0.749);
+    color: white;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.fdiv
+{
+    float: left;
+}
+
+#leftdiv
+{
+    width:70%;
+}
+#rightdiv
+{
+    
+}

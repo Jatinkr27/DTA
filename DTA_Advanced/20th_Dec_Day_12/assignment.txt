@@ -1,0 +1,73 @@
+1. Revise the following commands to create angular application
+		>	node   -v
+		>	npm   -v      (  node package manager	 )	
+		>	npm   install  -g  @angular/cli
+		>	ng   version
+		>	ng  new  my-project
+ 		>	cd  my-project
+		>	ng   s  -o
+
+2. Observe the following items in angular project  :
+
+			a.  [node_modules]  folder
+			b.  package.json
+			c.  gitignore
+			d.  [src]  folder
+			
+ 		
+3.   Create a node application from the scratch for the following requirements:
+
+		a.  Generate package.json using npm with required details.		
+				
+		b.  Install the uuid, js-convert-case packages in your project
+		
+		c. Observe the node_modules folder and pakcage.json after installation. 
+		
+		d.  Create Index.js file and  implement the following requirement:
+		
+					-->   create an array of user objects:
+							let usersArray = [
+								{uname :  "steve jobs", email :  "STevE@gmail.com",  cardId  :  ""},
+								.....
+							];
+					--> Generate uuid for every user and store in the cardId property.
+					
+					--> Display all the details in the console as follows:
+					
+			User Id = Steve Jobs,  Email =  steve@gmail.com,  cardId  = 4ADF4DF-ADSF4-ASDF54DFAS
+							
+							
+				Hint :   	-->  User Id should be header case (each word first letter capital)
+								-->  Email should be in lower case  
+								-->  Carid Id  should be in uppercase case  
+							
+					
+		
+
+		e. Copy all the files except node_modules and paste in another folder and try to run. 
+			Fix the issues if throw any errors. 
+		 
+				
+ 
+			
+Hint:  Study the uuid,  js-convert-case modules in npmjs.com web site	
+
+4.   Create a Angular Component to display collection of employee details in div format. 
+
+		
+		a.  Create array of employee objects
+			    empsArray =  [ 
+					{ empno : 10256,  ename :  "Scott", job : "Manager", sal : 45000, deptno : 10},
+					....
+					];
+		b.  Each employee details should show in separate div tag
+					-->   Employee name in Green color
+					-->   Salary in Red color 
+					-->  Job in  blue color	
+			
+			
+			
+			
+			
+			
+ 

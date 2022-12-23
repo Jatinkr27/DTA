@@ -1,0 +1,32 @@
+1.  How to add CSS class to html tag using jQuery?
+ $("img").addClass("bg-black");
+ $("img").removeClass("bg-black");
+
+2.  How to apply effect based on width property?
+$(selector).animate({params},speed,callback);
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("div").animate({width:'0px'});
+  });
+    $("#btn2").click(function(){
+    $("div").animate({width:'100px',left:'5px'});
+  });
+});
+</script> 
+</head>
+<body>
+
+<button id="btn1">Slide Left/Hide</button>
+<button id="btn2">Slide Right/Show</button>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+</body>
+</html>
+
+3. Create a web page to apply  Bold, Underline & Italic styles using jQuery.
+
+		Hint : Refer the image for sample output

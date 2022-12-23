@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation using jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>Validation</h2>
+    <hr/>
+    Person Name : <input type="text" id="t1" autofocus maxlength="10"><br><br>
+    Person Contact Number : <input type="text" id="t2" maxlength="10"><br><br>
+    Vehicle Number : <input type="text" id="t3"><br><br>
+    City Name : <input type="text" id="t4">
+
+    <script>
+        $(document).ready(function(){
+            
+
+            $("#t1").keyup(function(){
+                $("#error").remove();
+                const name = $("#t1").val();
+                const strTemp = /^[A-Za-z]+$/;
+                if(  strTemp.test(name)  ==  false  ||  name.length > 10) 
+							{
+								$(this).after('<span id="error" style="color:red;">10 alphabets only.</span>');
+							}
+            });
+
+            $("#t2").keyup(function(){
+                $("#error").remove();
+                const name = $("#t2").val();
+                const strTemp = /^\d*[0-9](|.\d*[0-9]|,\d*[0-9])?$/;
+                if(  strTemp.test(name)  ==  false   || name.length >  10) 
+							{
+								$(this).after('<span id="error" style="color:red;">10 digit Number only.</span>');
+							}
+            });
+
+
+            $("#t3").keyup(function(){
+                $("#error").remove();
+                const name = $("#t3").val();
+                const strTemp = /^([A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{4})$/;
+                if(  strTemp.test(name)  ==  false  &&  name.length >  0) 
+							{
+								$(this).after('<span id="error" style="color:red;">Enter valid vehicle number.</span>');
+							}
+            });
+
+
+            $("#t4").keyup(function(){
+                $("#error").remove();
+                const name = $("#t4").val();
+                const strTemp = /^[A-Z]*$/;
+                if(  strTemp.test(name)  ==  false  &&  name.length >  0) 
+							{
+								$(this).after('<span id="error" style="color:red;">Only capital letteres allowed.</span>');
+							}
+            });
+
+        });
+    </script>
+</body>
+</html>

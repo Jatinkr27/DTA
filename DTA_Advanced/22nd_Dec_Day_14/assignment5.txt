@@ -1,0 +1,44 @@
+5.   Assignment on remote repository   ---   set origin and push 
+			a.  Create a repository in Github
+			b.  Set the origin using gitbash
+			c. Push the committed changes  in Assignment-3 to remote server
+			d. Observe the files in the remote repository.
+
+jatinkumar7@USHYDJATINKUMA2 MINGW64 ~/Desktop/Git_Angular_Demo (master)
+$ git config --global user.name "Jatinkr27"
+
+jatinkumar7@USHYDJATINKUMA2 MINGW64 ~/Desktop/Git_Angular_Demo (master)
+$ git config --global user.email "jatinkr27@gmail.com"
+
+jatinkumar7@USHYDJATINKUMA2 MINGW64 ~/Desktop/Git_Angular_Demo (master)
+$ git config --global user.email
+jatinkr27@gmail.com
+
+jatinkumar7@USHYDJATINKUMA2 MINGW64 ~/Desktop/Git_Angular_Demo (master)
+$ git config --global user.name
+Jatinkr27
+
+jatinkumar7@USHYDJATINKUMA2 MINGW64 ~/Desktop/Git_Angular_Demo (master)
+$ git remote -v
+
+jatinkumar7@USHYDJATINKUMA2 MINGW64 ~/Desktop/Git_Angular_Demo (master)
+$ git remote add origin "https://github.com/Jatinkr27/TestDemo.git"
+
+jatinkumar7@USHYDJATINKUMA2 MINGW64 ~/Desktop/Git_Angular_Demo (master)
+$ git remote -v
+origin  https://github.com/Jatinkr27/TestDemo.git (fetch)
+origin  https://github.com/Jatinkr27/TestDemo.git (push)
+
+jatinkumar7@USHYDJATINKUMA2 MINGW64 ~/Desktop/Git_Angular_Demo (master)
+$ git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 242 bytes | 242.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Jatinkr27/TestDemo.git
+ * [new branch]      master -> master
+
+jatinkumar7@USHYDJATINKUMA2 MINGW64 ~/Desktop/Git_Angular_Demo (master)

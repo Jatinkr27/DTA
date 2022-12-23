@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csv to List</title>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>Csv To List</h2>
+    <hr/>
+    Input String : <input type="text" id="t1" autofocus> <button id="b1">Get Data</button>
+    <ul id="l1"></ul>
+
+    <script>
+        $(document).ready(function(){
+            $("body").css("background-color","lightyellow")
+            $("#b1").click(function(){
+                var csv = $("#t1").val();
+                var csvArr = csv.split(",");
+                $("#l1").html("");
+
+                for (let key of csvArr) {
+                    $("#l1").append(`<li>${key.toUpperCase()}</li>`);
+                }
+                $("#t1").val("");
+            });
+
+        });
+    </script>
+</body>
+</html>

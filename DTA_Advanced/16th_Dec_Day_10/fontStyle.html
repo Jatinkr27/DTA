@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styles</title>
+    <style>
+        .btn{
+            background-color: blue;
+            border: 3px solid black;
+            color:white;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        .underline{
+            text-decoration:underline;
+        }
+        .itallic{
+            font-style: italic;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>Applying style classes using jQuery </h2>
+    <hr/>
+    <button id="b1">B</button>
+    <button id="b2">U</button>
+    <button id="b3">I</button>
+
+    <p id="para1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, exercitationem. Nobis voluptatem amet explicabo temporibus, officiis illo provident rerum? Repellendus quos repudiandae sit, quod iusto molestias asperiores soluta debitis amet officia expedita quae alias iste molestiae sint ipsum voluptates nostrum libero fugit, nihil dolore quibusdam aut tempora tenetur? Sapiente, quae ab. Accusamus molestias maxime et vero earum pariatur omnis! Quos, assumenda? Provident, harum! Eius velit fugiat libero provident ratione labore sit, sapiente aspernatur ex reiciendis nostrum, vero placeat aliquam. Repellendus veritatis sequi veniam consequuntur expedita suscipit cupiditate temporibus itaque ipsum, commodi quae inventore voluptatibus quaerat dolorum totam necessitatibus minus quia?
+    </p>
+    <script>
+        $(document).ready(function(){
+
+            $("#para1").css({"border":"2px solid blue","padding":"5px"});
+
+            $("#b1").click(function(){
+                $("#para1").toggleClass("bold");
+                $("#b1").toggleClass("btn");
+            });
+
+            $("#b2").click(function(){
+                $("#para1").toggleClass("underline");
+                $("#b2").toggleClass("btn");
+            });
+
+            $("#b3").click(function(){
+                $("#para1").toggleClass("itallic");
+                $("#b3").toggleClass("btn");
+            });
+
+        });
+    </script>
+</body>
+</html>
